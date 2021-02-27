@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white:#fff;
+    --background: #F9F6F1;
+    --yellow: #FFC452;
+    --text: #414141;
+    --title: #F9F6F1;
+}

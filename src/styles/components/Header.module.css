@@ -1,0 +1,38 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+    background: var(--yellow);
+    width: 100%;
+    height: 6rem;
+}
+
+.headerContainer h1 {
+    color: var(--title);
+}
+
+.headerContainer form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerContainer input {
+    border-radius: 8px 0 0 8px;
+    border: 0;
+    padding: 0.8rem;
+    width: 16rem;
+}
+
+.headerContainer button {
+    border-radius: 0 8px 8px 0;
+    border: 0;
+    background: var(--white);
+    padding: 0.4rem;
+}
+
+.headerContainer button img {
+    width: 1.5rem;  
+}
