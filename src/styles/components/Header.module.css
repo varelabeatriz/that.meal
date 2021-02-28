@@ -22,8 +22,10 @@
 .headerContainer input {
     border-radius: 8px 0 0 8px;
     border: 0;
-    padding: 0.8rem;
+    padding: 0.7rem;
     width: 16rem;
+    font-size: 1rem;
+    color: var(--text);
 }
 
 .headerContainer button {
