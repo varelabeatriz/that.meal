@@ -1,13 +1,14 @@
 import { Header } from './components/Header';
-import { RecipesContext } from './contexts/RecipesContext';
+import RecipesProvider from './contexts/RecipesContext';
+
 import './styles/global.css';
 
 function App() {
   return (
     <div className="App">
-      <RecipesContext.Provider value={'teste'}>
+      <RecipesProvider>
         <Header />
-      </RecipesContext.Provider>
+      </RecipesProvider>
     </div>
   );
 }
