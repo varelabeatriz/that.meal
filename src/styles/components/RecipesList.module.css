@@ -15,7 +15,7 @@
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    margin: 0.5rem;
+    margin: 1rem;
     width: 20rem;
 
     background: var(--card);
@@ -36,21 +36,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 
 .cardInfo a{
     text-decoration: none;
     background: var(--yellow);
     border: 0;
-    border-radius: 12px;
-    padding: 6px;
+    border-radius: 16px;
+    padding: 0.4rem 1rem;
     color: white;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .mealType {
-    background: rgb(211, 211, 211);
-    border-radius: 14px;
-    padding: 4px 8px;
-    color: var(--text);
-    font-size: 0.9rem;
+    background: rgb(226, 226, 226);
+    border-radius: 16px;
+    padding: 0.4rem 1rem;
+    color: grey;
+    font-size: 1rem;
+}
+
+.noResults {
+   display: flex;
+   align-items: center;
+   margin-left: 50%;
 }

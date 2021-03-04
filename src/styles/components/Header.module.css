@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 8rem;
 
     background: var(--yellow);
     width: 100%;
@@ -23,7 +23,7 @@
     border-radius: 6px 0 0 6px;
     border: 0;
     padding: 0.7rem;
-    width: 16rem;
+    width: 20rem;
     font-size: 1rem;
     color: var(--text);
 }

@@ -3,13 +3,13 @@ import styles from '../styles/components/RecipesList.module.css';
 import { useRecipes } from "../contexts/RecipesContext";
 
 export function RecipesList() {
-    const { recipes} = useRecipes();
+    const { recipes } = useRecipes();
 
     console.log(recipes);
 
     return (
-        <div 
-        className={styles.recipesContainer}
+        <div
+            className={styles.recipesContainer}
         >
             <div className={styles.cardsList}>
                 {recipes ? (
@@ -21,12 +21,12 @@ export function RecipesList() {
                                 <p>{recipes.recipe.label}</p>
                                 <div className={styles.cardInfo}>
 
-                        {recipes.recipe.mealType ? (
-                            <div className={styles.mealType}>{recipes.recipe.mealType}</div>
-                        ) : (
-                            <span></span>
-                        )}
-                                    
+                                    {recipes.recipe.mealType ? (
+                                        <div className={styles.mealType}>{recipes.recipe.mealType}</div>
+                                    ) : (
+                                            <span></span>
+                                        )}
+
 
                                     <a href={recipes.recipe.url}>See Recipe</a>
                                 </div>
@@ -35,7 +35,9 @@ export function RecipesList() {
                     ))
 
                 ) : (
-                        <h1>Search to find amazing recipes!</h1>
+                        <div className={styles.noResults}>
+                            <img src="cookinghat.png" alt="cookinghat" />
+                        </div>
                     )}
             </div>
         </div>
