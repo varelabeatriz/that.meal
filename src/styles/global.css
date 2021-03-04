@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: gainsboro;
 }
 
 :root{
     --white:#fff;
-    --background: #F9F6F1;
+    --background: #f1efeb;
     --yellow: #FFC452;
     --text: #414141;
     --title: #F9F6F1;
+    --card: #ffffff;
 }

@@ -6,11 +6,10 @@ const RecipesContext = createContext();
 
 export default function RecipesProvider({ children }) {
 
-
-    const [query, setQuery] = useState("");
+    const [query, setQuery] = useState("pizza");
     const [recipes, setRecipes] = useState("");
 
-    const url = `https://api.edamam.com/search?q=${query}&app_id=40397336&app_key=4a94758e236039d6dc365a1f6f342eef&from=0&to=3&calories=591-722&health=alcohol-free`;
+    const url = `https://api.edamam.com/search?q=${query}&app_id=40397336&app_key=4a94758e236039d6dc365a1f6f342eef&from=0&to=12`;
 
     const getData = async () => {
         const result = await Axios.get(url);

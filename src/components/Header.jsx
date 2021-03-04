@@ -20,7 +20,7 @@ export function Header() {
             <form onSubmit={onSubmit}>
                 <input
                     type="text"
-                    placeholder="Pesquise Aqui"
+                    placeholder="Search here"
                     onChange={onChange}
                     value={query}
                 />

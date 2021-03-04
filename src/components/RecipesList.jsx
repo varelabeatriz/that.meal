@@ -3,29 +3,41 @@ import styles from '../styles/components/RecipesList.module.css';
 import { useRecipes } from "../contexts/RecipesContext";
 
 export function RecipesList() {
-    const { recipes } = useRecipes();
+    const { recipes} = useRecipes();
 
     console.log(recipes);
 
-    // if ( recipes != undefined | recipes != null) {
-
-    // }
-
     return (
-        <div className={styles.recipesListContainer}>
-            { recipes ? (
+        <div 
+        className={styles.recipesContainer}
+        >
+            <div className={styles.cardsList}>
+                {recipes ? (
 
-                recipes.map((recipes) => (
-                    <div className={styles.recipeCard}>
-                        <h1>{recipes.recipe.label}</h1>
-                        <img src={recipes.recipe.image} alt="recipe image" />
-                    </div>
-                ))
+                    recipes.map(recipes => (
+                        <div className={styles.recipeCard}>
+                            <div key={recipes.calories}>
+                                <img src={recipes.recipe.image} alt="recipe image" />
+                                <p>{recipes.recipe.label}</p>
+                                <div className={styles.cardInfo}>
 
-            ) : (
-                    <h1>Nenhum resultado disponível</h1>
-                )}
+                        {recipes.recipe.mealType ? (
+                            <div className={styles.mealType}>{recipes.recipe.mealType}</div>
+                        ) : (
+                            <span></span>
+                        )}
+                                    
 
+                                    <a href={recipes.recipe.url}>See Recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                    ))
+
+                ) : (
+                        <h1>Search to find amazing recipes!</h1>
+                    )}
+            </div>
         </div>
     )
 }
