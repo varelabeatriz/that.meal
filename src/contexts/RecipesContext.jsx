@@ -14,7 +14,7 @@ export default function RecipesProvider({ children }) {
 
     const getData = async () => {
         const result = await Axios.get(url);
-        setRecipes(result);
+        setRecipes(result.data.hits);
         setQuery("");
     }
 

@@ -1,0 +1,20 @@
+.recipesListContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipeCard {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 800px;
+
+    background: rgb(238, 238, 238);
+    border-radius: 8px;
+
+}
