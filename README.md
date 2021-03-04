@@ -1,5 +1,8 @@
 #  🥘 that.meal
 
+![enter image description here](https://i.imgur.com/2Vdobc5.png)
+
+![enter image description here](https://i.imgur.com/3pxu9ML.png)
 
 ## 🥗 About
  - **that.meal** is a platform to discover new recipes. Just search for the recipes you want, or even for an ingredient, and get inspired by all the different possibilities. 
